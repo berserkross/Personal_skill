@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "platform": "Windows",
+  "agents": {
+    "claudeCode": {
+      "model": "ccs-claude-github--gpt-4.1[1m]",
+      "aliases": {
+        "HAIKU": "ccs-claude-deepseek--deepseek-v4-pro[1m]",
+        "SONNET": "ccs-claude-deepseek--deepseek-v4-pro[1m]",
+        "OPUS": "ccs-claude-deepseek--deepseek-v4-pro[1m]",
+        "FABLE": "ccs-claude-deepseek--deepseek-v4-pro[1m]"
+      }
+    },
+    "codex": {
+      "model": "gpt-6.2-astra",
+      "reasoningEffort": "high",
+      "serviceTier": "default"
+    },
+    "dsh": {
+      "model": "deepseek-flash",
+      "provider": "deepseek-official",
+      "reasoningEffort": "off"
+    },
+    "deepTutor": {
+      "llm": {
+        "activeProfile": true,
+        "model": "deepseek-flash"
+      },
+      "task": {
+        "activeProfile": true,
+        "model": "qwen3:8b"
+      },
+      "embedding": {
+        "activeProfile": true,
+        "model": "qwen3-embedding:4b"
+      },
+      "search": {
+        "activeProfile": true,
+        "model": "unset",
+        "provider": "firecrawl"
+      },
+      "tts": {
+        "activeProfile": true,
+        "model": "edge-tts"
+      },
+      "stt": {
+        "activeProfile": false,
+        "model": "unset"
+      },
+      "imagegen": {
+        "activeProfile": true,
+        "model": "gpt-image-2.6-sunburst"
+      },
+      "videogen": {
+        "activeProfile": false,
+        "model": "unset"
+      }
+    }
+  },
+  "ides": {
+    "CLion": {
+      "configVersion": "2026.3",
+      "registeredSDKs": [],
+      "customKeymaps": [],
+      "bundledToolDirectories": [
+        "cmake",
+        "ninja",
+        "mingw",
+        "clang",
+        "gdb",
+        "lldb"
+      ]
+    },
+    "PyCharm": {
+      "configVersion": "2026.3",
+      "registeredSDKs": [
+        {
+          "type": "Python SDK",
+          "version": "3.11.4"
+        },
+        {
+          "type": "Python SDK",
+          "version": "3.12.13"
+        },
+        {
+          "type": "Python SDK",
+          "version": "3.12.13"
+        },
+        {
+          "type": "Python SDK",
+          "version": "3.12.13"
+        },
+        {
+          "type": "Python SDK",
+          "version": "3.12.13"
+        }
+      ],
+      "customKeymaps": [
+        {
+          "parent": "$default",
+          "bindings": {
+            "$Redo": [
+              {
+                "first": "shift ctrl z",
+                "second": ""
+              },
+              {
+                "first": "shift alt back_space",
+                "second": ""
+              },
+              {
+                "first": "ctrl y",
+                "second": ""
+              }
+            ],
+            "ActivateBookmarksToolWindow": [],
+            "ClaudeCodeGUI.ChatNewlineAction": [
+              {
+                "first": "ctrl enter",
+                "second": ""
+              }
+            ],
+            "DatabaseView.PropertiesAction": [],
+            "EditorDeleteLine": [],
+            "RunAnything": []
+          }
+        }
+      ]
+    },
+    "IntelliJIdea": {
+      "configVersion": "2026.3",
+      "registeredSDKs": [
+        {
+          "type": "JavaSDK",
+          "version": "24.0.2"
+        },
+        {
+          "type": "JavaSDK",
+          "version": "26"
+        },
+        {
+          "type": "JavaSDK",
+          "version": "26"
+        }
+      ],
+      "customKeymaps": [
+        {
+          "parent": "$default",
+          "bindings": {
+            "$Redo": [
+              {
+                "first": "shift ctrl z",
+                "second": ""
+              },
+              {
+                "first": "shift alt back_space",
+                "second": ""
+              },
+              {
+                "first": "ctrl y",
+                "second": ""
+              }
+            ],
+            "ActivateBookmarksToolWindow": [],
+            "ClaudeCodeGUI.ChatNewlineAction": [
+              {
+                "first": "ctrl enter",
+                "second": ""
+              }
+            ],
+            "EditorDeleteLine": [],
+            "RunAnything": []
+          }
+        }
+      ]
+    },
+    "vscode": {
+      "profiles": [
+        {
+          "scope": "default",
+          "hasSettings": true,
+          "settings": {
+            "[markdown]": {
+              "editor.wordWrap": "on"
+            },
+            "[bat]": {}
+          }
+        },
+        {
+          "scope": "named",
+          "hasSettings": false
+        }
+      ],
+      "extensionRegistryPresent": true,
+      "selectedExtensions": []
+    }
+  }
+}
