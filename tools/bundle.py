@@ -8,7 +8,7 @@ from pathlib import Path
 from zipfile import BadZipFile, ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.3.0"
+VERSION = "0.4.0"
 CORE = {"README.md", "MIGRATION.md", "PACKAGING.md", "skills/personal-workstyle/SKILL.md",
         "skills/personal-workstyle/agents/openai.yaml", "snapshots/windows.json",
         "tools/Export-PublicConfig.ps1", "tools/bundle.py"}
@@ -36,7 +36,7 @@ def verify(path):
             raise ValueError("Duplicate paths.")
         manifest = json.loads(archive.read(MANIFEST))
         members = set(names) - {MANIFEST}
-        if manifest["format"] != 1 or manifest["version"] not in {"0.2.0", "0.2.1", VERSION}:
+        if manifest["format"] != 1 or manifest["version"] not in {"0.2.0", "0.2.1", "0.3.0", VERSION}:
             raise ValueError("Unsupported format or version.")
         if not CORE <= members or members != set(manifest["files"]):
             raise ValueError("Missing files or unlisted members.")
