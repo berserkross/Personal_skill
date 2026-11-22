@@ -1,14 +1,14 @@
-# 个人工作方式与开发环境迁移包(自用)
+# AI 与其他工具的使用方法及开发环境迁移包(自用)
 
-v0.2.1 · Windows · 2026-11-22
+v0.3.0 · Windows · 2026-11-22
 
-本仓库同时维护两种会独立变化的内容：本人确认过的工作方式，以及本机 AI 和开发工具可公开的配置。Git 提交记录两者的变化。
+本仓库记录我怎样选择、组合和验证 AI 与其他工具，并备份可公开的配置，方便换模型或换机器后继续工作。开发和课程学习是优先收集用例的场景。学籍资料仅提供背景。
 
 | 内容 | 入口 |
 |---|---|
 | 可直接下载的公开版 ZIP | [下载版本包](https://github.com/berserkross/Personal_skill/raw/refs/heads/main/dist/personal-skill-public.zip) · [SHA-256](dist/SHA256SUMS) |
 | 构建、校验与私人版 | [打包说明](PACKAGING.md) |
-| 显式启用的个人偏好 | [SKILL.md](skills/personal-workstyle/SKILL.md) |
+| 已确认的工具用法与适用场景 | [SKILL.md](skills/personal-workstyle/SKILL.md) |
 | 首次公开配置快照 | [windows.json](snapshots/windows.json) |
 | 重新采集允许公开的字段 | [Export-PublicConfig.ps1](tools/Export-PublicConfig.ps1) |
 | 八款工具的迁移步骤、覆盖范围与更新方法 | [迁移与维护](MIGRATION.md) |
