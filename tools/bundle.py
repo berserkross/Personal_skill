@@ -8,7 +8,7 @@ from pathlib import Path
 from zipfile import BadZipFile, ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 CORE = {"README.md", "MIGRATION.md", "PACKAGING.md", "skills/personal-workstyle/SKILL.md",
         "skills/personal-workstyle/agents/openai.yaml", "snapshots/windows.json",
         "tools/Export-PublicConfig.ps1", "tools/bundle.py"}
